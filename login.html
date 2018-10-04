@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<header>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>ログイン</title>
+			<script>
+			//今日の日付データを変数todayに格納
+				var today=new Date();
+			//年・月・日・曜日を取得する
+				var year = today.getFullYear();
+				var month = today.getMonth()+1;
+				var week = today.getDay();
+				var day = today.getDate();
+				var day_week= new Array("日","月","火","水","木","金","土");
+				var str = year+"年"+month+"月"+day+"日 "+day_week[week]+"曜日";
+				document.write (str.fontcolor("#FFFFFF"));
+			</script>
+			<div class="title" style="padding:10px">ウェルダン高等学校</div>
+			<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+			<link rel="stylesheet" media="(min-width:640px)" type="text/css" href="csstest/login_pc.css">
+			<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="csstest/login_mobile.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+			<!--[if lt IE 9]>
+				<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+				<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+				<![endif]-->
+			<!-- <script type = "text/javascript"  src = "js/jquery-1.10.2.min.js "></script> -->
+ 
+			</header>
+		</head>
+<body>
+	<div class="login">
+		<div class="heading">
+			<h2>Login</h2>
+			<form action="post">
+
+	      <div class="input-group input-group-lg1">
+	        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+	        <input type="text" class="form-control" placeholder="User ID">
+	      </div>
+
+				<div class="input-group input-group-lg2">
+					<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+					<input type="password" class="form-control" placeholder="Password">
+				</div>
+
+				<div class="button">
+					<button type="button" class="float" onclick="location.href='mainmenu.html'">Login</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+</body>
+
+<footer>
+	<ul>
+		<li>Copyright ©️ Welldone System, Inc. All Rights reserved</li>
+		<li><a class="FURL" href="http://welldone.co.jp/" rel="stylesheet">学校HPへ戻る</a></li>
+	</ul>
+</footer>
+
+</html>
