@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<!--pc用  -->
+	<link rel="stylesheet" media="(min-width:640px)" type="text/css" href="csstest/headerfooter_pc.css">
+	<link rel="stylesheet" media="(min-width:640px)" type="text/css" href="csstest/mypage_pc.css">
+	<!--スマホ用  -->
+	<link rel="stylesheet" media="(max-width:640px)" type="text/css" href="csstest/headerfooter_mobile.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	<head>
+		<header>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>高等学校</title>
+			
+			<script>
+				//今日の日付データを変数todayに格納
+					var today=new Date();
+				//年・月・日・曜日を取得する
+					var year = today.getFullYear();
+					var month = today.getMonth()+1;
+					var week = today.getDay();
+					var day = today.getDate();
+					var day_week= new Array("日","月","火","水","木","金","土");
+					var str = year+"年"+month+"月"+day+"日 "+day_week[week]+"曜日";
+					document.write (str.fontcolor("#FFFFFF"));
+			</script>
+
+			<script type = "text/javascript"  src = "js/jquery.yycountdown.min.js "></script>
+
+			<div id="center">
+				2019年度センター試験まで...
+			</div>
+			<br>
+			<div id="timer"></div>
+			<!-- <div id="timer2"></div> -->
+
+			<script type="text/javascript">
+				$("#timer").yycountdown({
+					endDateTime   : '2019/01/12 00:00:00'
+					});
+
+				// $("#timer2").yycountdown({
+				// 	startDateTime : '2018/01/12 23:59:55',
+				// 	endDateTime   : '2019/01/12 00:00:00',
+				// 	unit          : {d: '日', h: '時間', m: '分', s: '秒'},
+				// 	complete      : function(_this){
+				// 			_this.find('.yycountdown-box').fadeOut();
+				// 	}
+				// });
+			</script>
+
+			<div class="title" style="padding:10px">ウェルダン高等学校</div>
+			<h1>第○学年△組  生徒名</h1>
+			<nav>
+		  	<ul>
+		    	<li><a href="mainmenu.html">メインメニュー</a></li>
+		    	<li><a type="button" data-toggle="modal" data-target="#sampleModal">受験校登録</a></li>
+		    	<li><a href="#">カレンダー</a></li>
+		    	<li><a href="#">大学ナビ</a></li>
+		  	</ul>
+			</nav>
+			
+			<!-- 受験校登録モーダル・ダイアログ -->
+			<div class="modal fade" id="sampleModal" tabindex="-1">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<h4 class="modal-title">受験校登録</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-group">
+								<label for="inputTitle">受験日</label>
+								<input id="inputTitle" type="text" class="form-control col-xs-1">
+							</div>
+							<div class="form-group">
+								<label for="inputContent">学校名</label>
+								<input id="inputTitle" type="text" class="form-control col-xs-1"></input>
+							</div>
+							<div class="form-group">
+								<label for="inputContent">合格発表日</label>
+								<input id="inputTitle" type="text" class="form-control col-xs-1"></input>
+							</div>
+							<div class="form-group">
+								<label for="inputContent">ステータス</label>
+								<input id="inputTitle" type="text" class="form-control col-xs-1"></input>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">キャンセル</button>
+							<button type="button" class="btn btn-primary">登録</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			</header>
+		</head>
+	<body>
+
+		<div class="mypage">
+			
+			<h2>受験校リスト</h2>
+
+			<div style="margin-top: 10px;">
+
+				<span id="messagesArea"></span>
+
+			</div>
+
+			<form id="form" name="form" class="form-horizontal" >
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th width="17%"><div style="text-align: left;">受験日</div></th>
+						<th width="30%"><div style="text-align: left;">学校名</div></th>
+						<th width="25%"><div style="text-align: left;">合格発表日</div></th>
+						<th width="18%"><div style="text-align: left;">ステータス</div></th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>2018年02月15日</td>
+						<td>早稲田大学</td>
+						<td>2018年02月22日</td>
+						<td>不合格</td>
+					</tr>
+					<tr>
+						<td>2018年02月16日</td>
+						<td>立教大学</td>
+						<td>2018年02月23日</td>
+						<td>合格</td>
+					</tr>
+					<tr>
+						<td>2018年02月24日</td>
+						<td>法政大学</td>
+						<td>2018年03月01日</td>
+						<td>出願済</td>
+					</tr>
+					<tr>
+						<td>2018年02月25日</td>
+						<td>中央大学</td>
+						<td>2018年03月01日</td>
+						<td>出願済</td>
+					</tr>
+					<tr>
+						<td>2018年02月26日</td>
+						<td>東洋大学</td>
+						<td>2018年03月02日</td>
+						<td>未出願</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			</form>
+
+		</div>
+	</body>
+
+<footer>
+	<ul>
+		<li>Copyright ©️ Welldone System, Inc. All Rights reserved</li>
+		<li><a class="FURL" href="http://welldone.co.jp/" rel="stylesheet">学校HPへ戻る</a></li>
+	</ul>
+</footer>
+
+</html>
