@@ -1,0 +1,167 @@
+/* pc用ログイン CSS*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
+
+@media print, screen and (min-width: 640px) {
+/*全体の画面サイズ*/
+html{
+  width: 100%;
+  height: 100%;
+}
+/*header部分調整*/
+
+div.title{
+    width:100%;
+    font-size: 20px;
+    color:#FFFFFF;
+    margin:10px;
+}
+
+header,footer{
+    background-image: url(picture/green.png);
+    display: inline-block;
+    width:100%;
+    overflow: hidden;
+}
+
+div#center{
+  float:right;
+  font-size: 15px;
+  color:#FFFFFF;
+  margin-right: 20px;
+}
+
+.yycountdown-box{
+  text-align:right;
+  margin:10px 10px;
+  color:#FFFFFF;
+}
+
+div#timer.yycountdown-box .yyc-day{
+  font-size:10.0em;
+  color:#0085C7;
+}
+div#timer.yycountdown-box .yyc-hou{
+  font-size:10.0em;
+  color:#F4C300;
+}
+div#timer.yycountdown-box .yyc-min{
+  font-size:10.0em;
+  color:#009F3D;
+}
+div#timer.yycountdown-box .yyc-sec{
+  font-size:10.0em;
+  color:#DF0024;
+}
+
+/*body部分調整*/
+
+body{
+    background-color: #FFFFEE;
+    height: 100%;
+}
+
+div.login{
+    background-color: #fafafa;
+    width: 50%;
+    height: 50%;
+    color:#077685;
+    font-weight: 400;
+    box-shadow: 2px 2px 10px #488a9e;
+    border: solid #4eb4c2 1px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+div.heading{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+}
+
+form{
+  position: fixed;
+}
+
+h2{
+    margin: 240px 0px 0px 570px;
+    text-align: center;
+    position: fixed;
+}
+
+div.button{
+    margin: 30px 0px 20px 580px;
+    text-align: center;
+    position: fixed;
+}
+
+button.float{
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+}
+
+div.input-group-lg1{
+    width: 50%;
+    margin-top: 320px;
+    margin-left: 450px;
+}
+
+div.input-group-lg2{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 450px;
+    margin-bottom: 30px;
+}
+
+span.input-group-addon{
+    box-shadow: 0px 8px 6px #e3e3e3;
+    position: fixed;
+}
+
+input.form-control{
+    box-shadow: 0px 8px 6px #e3e3e3;
+    background-color: #FFFFFF;
+    position: fixed;
+}
+
+/*fotter部分調整*/
+
+footer{
+    position:fixed;
+    height: 50px;
+    bottom:0;
+}
+
+footer p {
+    color:#FFFFFF;
+    margin-left:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    width: 50%;
+    font-size: 90%;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 45px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    float: left;
+}
+
+a.FURL{
+    color:#FFFFFF;
+    border-bottom:1px solid #FFFFFF;
+    border-color:#FFFFFF;
+}
+
+}
