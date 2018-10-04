@@ -1,0 +1,217 @@
+/* pc用メインメニュー CSS*/
+@media print, screen and (min-width: 640px) {
+  /*全体の画面サイズ*/
+  html{
+    width: 100%;
+    height: 100%;
+  }
+/*header*/
+div.title{
+    width:100%;
+    font-size: 20px;
+    color:#FFFFFF;
+    margin:10px;
+}
+header,footer{
+    background-image: url(picture/green.png);
+    display: inline-block;
+    width:100%;
+    overflow: hidden;
+}
+div.balloon5 {
+    width: 100%;
+    margin: 1px 0;
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+.balloon5 .faceicon {
+    float: left;
+    margin-left: 400px;
+    margin-right: -600px;
+    width: 80px;
+}
+
+.balloon5 .faceicon img{
+    width: 100px;
+    height: 100%;
+    border: solid 3px 	#99FFCC;
+    border-radius: 50%;
+}
+
+.balloon5 .chatting {
+    width: 100%;
+}
+
+.chatting {
+    margin-left: 400px;
+}
+
+.says {
+    display: inline-block;
+    position: relative;
+    margin: 5px 0 0 105px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: #99FFCC;
+}
+
+.says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid 	#99FFCC;
+}
+
+p.word{
+    color: #FF4F50;
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    font-size:120%;
+    color:#FFFFFF;
+
+    padding-bottom: 10px;
+
+    margin-bottom: 20px;
+    margin-left: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight:400;
+    float: right;
+}
+
+/*body*/
+body{
+    background-color: #FFFFEE;
+}
+
+nav{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+ul.circle-menu{
+    width: 100%;
+    padding-left: 2px;
+}
+
+li.circle{
+    letter-spacing: 10px;
+    font-weight: 400;
+    line-height: 45px;
+    color: rgba(255,255,255,1);
+    cursor: pointer;
+    display: inline-block;
+    list-style: none;
+    width: 320px;
+    height: 320px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 3px;
+}
+
+li.circle:hover  {
+  opacity: 1;
+  transition: 1s ;
+ /* transform: rotate3D(1,1,0,360deg ) ; */
+  /* transform: rotateY(360deg ) ; */
+}
+
+div.line{
+    background: rgba(255,255,255,0.5);
+    width: 320px;
+    height: 100%;
+    border-radius: 9px;
+}
+
+a.menu{
+    font-size: 30px;
+//    color:#7CFC00;
+    color:rgba(255,255,255,1);
+    font-weight: 600;
+    text-shadow: 3px 3px 3px #3333CC;
+    text-decoration: underline;
+}
+
+a.menu:hover{
+      color: rgba(0,255,0,1);;
+}
+
+li.test{
+  background-image:url(picture/test.jpg) ;
+  background-position: center;
+  background-size: 560px;
+  opacity: 0.7;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  border-radius: 50%;
+}
+
+li.attendance{
+  background-image:url(picture/attendance.jpg) ;
+  background-position: center;
+  background-size: 560px;
+  opacity:0.7;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  border-radius: 50%;
+}
+
+li.exam{
+  background-image: url(picture/exam.png);
+  background-position: center;
+  opacity:0.7;
+  padding-top: 135px;
+  padding-bottom: 135px;
+  border-radius: 50%;
+}
+
+
+
+/*footer*/
+footer{
+    position:fixed;
+    height: 50px;
+    bottom:0;
+}
+
+footer p {
+    color:#FFFFFF;
+    margin-left:15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    width: 50%;
+    font-size: 90%;
+    letter-spacing: 2px;
+    font-weight: 400;
+    line-height: 45px;
+    color: rgba(255,255,255,1);
+    text-align: center;
+    float: left;
+}
+
+a.FURL{
+    color:#66CCFF;
+    border-bottom:1px solid #66CCFF;
+    border-color:#66CCFF;
+}
+
+a.FURL:hover{
+    color:#FF3366;
+    border-color: #FF3366;
+}
+
+}
