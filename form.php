@@ -11,7 +11,7 @@ if(empty($_SESSION['nums']) || !empty($_SESSION["mail"])) {
 }
 
 // 初期化
-$postagagagagagagagagaggagagagagaagaga = array();
+$postあああああああagagagagagagagagaggagagagagaagaga = array();
 
 $error = array();
 
